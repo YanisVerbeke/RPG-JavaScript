@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<title>Legend of Angamara</title>
+</head>
+<body>
+
+	<h1> The Legend of ANGAMARA </h1>
+	<form>
+		<label>Pseudo :<br> </label>
+		<input type="text" id="nomperso">
+		<input type="submit" onclick="return getName()">
+	</form>
+	
+	<span id="CycleJourNuit"></span>
+
+	<div id="intro"></div>
+	
+	<button id="startgame" onclick="return startGame()">COMMENCER LA PARTIE</button>
+
+	<div id="startcombat">
+	
+	<button id="taper" onclick="return Taper()">Attaquer le Monstre</button>
+	
+	<table>
+		<tr>
+			<td colspan = "3">LE MONSTRE</td>
+		</tr>
+		<tr>
+			<td id="nomMonstre"></td>
+			<td id="forceMonstre"></td>
+			<td id="enduMonstre"></td>
+		</tr>
+	</table>
+
+	</div>
+	
+	<div id="monstreMortBoutique">
+
+	<button id="goshop" onclick="return goShop()">Allez a la boutique</button>
+
+	</div>
+
+	<div id="shop">
+
+		<button onclick="achatPotionMaj()">Acheter 1 Potion de Soin</button>
+		<button onclick="achatPotionFor()">Acheter 1 Potion de Force</button>
+		<button onclick="achatPotionAgi()">Acheter 1 Potion d'Agilite</button>
+		<button onclick="achatPotionEndu()">Acheter 1 Potion d'Endurance</button><br>
+		<button id ="leaveBoutique" onclick = "leaveBoutique()">Quitter la boutique</button>
+	</div>
+
+
+	
+	<div id="stuff">
+	
+	<p id ="showstat"></p>
+
+	<table class="monPerso">
+		<tr>
+			<td colspan="2"><span id="nom"></span></td>
+			<td id="vieJoueur"></td>			
+			<td id="forceJoueur"></td>
+			<td id="agiJoueur"></td>
+			<td id="enduJoueur"></td>
+		</tr>
+		<tr class="inventaire">
+			<td colspan="6">mon Inventaire</td>
+		</tr>
+		<tr>
+			<td>Argent</td>
+			<td>Potion Soin Mineur</td>
+			<td>Potion Soin Majeur</td>
+			<td>Potion de Force</td>
+			<td>Potion d'Agilite</td>
+			<td>Potion d'Endurance</td>
+		</tr>
+		<tr>
+			<td id="money"></td>
+			<td id="mineur"></td>
+			<td id="majeur"></td>
+			<td id="force"></td>
+			<td id="agi"></td>
+			<td id="endu"></td>
+		</tr>
+	</table>
+	</div>
+
+	
+	<div id="inventory">
+	<table>
+		<tr>
+			<td colspan="5">Consommer une potion ?</td>
+		</tr>
+		<tr>
+
+			<td><button id="aPotionMin" onclick ="useSoinMineur()">+10 pv</button></td>
+			<td><button id="aPotionMaj" onclick ="useSoinMajeur()">+20 pv</button></td>
+			<td><button id="aPotionFor" onclick ="useForce()">+1 Force</button></td>
+			<td><button id="aPotionAgi" onclick ="useAgi()">+1 Agilite</button></td>
+			<td><button id="aPotionEndu"onclick ="useEndu()">+1 Endu</button></td>
+		</tr>
+
+	</table>
+	<button onclick ="startGame()">Repartir a l'Aventure</button>
+	</div>
+	<div id="monTableau"></div>
+
+	<footer>
+		<span>Game made by :<br> Nathan &nbsp;&nbsp;&nbsp;&nbsp;     Yanis&nbsp;&nbsp;&nbsp;&nbsp;      Kevin</span><br>
+		<img src="./ressources/d&d.png"
+	</footer>
+
+	<script src="./prj.js"></script>
+</body>
+</html>

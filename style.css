@@ -1,0 +1,71 @@
+@font-face {
+    font-family: legend;
+    src: url(./ressources/legend.otf);
+}
+
+body{
+	font-family: "legend", sans-serif;
+	background-image: url(./ressources/d&d.png) no-repeat;
+	background-position: all;
+	text-align: center;
+
+}
+
+input{
+		font-family: "legend", sans-serif;
+}
+
+body button{
+	font-family : "legend", sans-serif;
+	margin : 40px auto;
+}
+
+label {
+	font-size: 26px;
+}
+table {
+	margin : auto;
+	border-spacing: 0px;
+	background-color: #FFF;
+}
+
+td {
+	border : 1px solid black;
+	margin : 0;
+	padding: 15px;
+	font-size: 24px;
+}
+
+button {
+	text-shadow: 5px;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+
+}
+
+.inventaire {
+	margin-top : 40px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+#intro {
+	margin-top:10px;
+	font-size: 25px;
+}
+
+footer {
+	 position : relative;
+	 top : 40px;
+	 margin : auto;
+}
+
+
+#monTableau {
+	margin-top: 30px;
+}
